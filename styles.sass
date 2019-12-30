@@ -16,7 +16,6 @@ header
   display: flex
   width: 100%
   background-color: #000
-  height: 93px
 
 .header__logo
   text-transform: uppercase
@@ -71,16 +70,69 @@ main
 
 .about__right
   margin-left: 155px
+  width: 40%
   h3
     display: inline-block
     text-transform: uppercase
-    padding: 20px 0 20px 0
+    padding: 20px 0 15px 0
     color: rgb(34,34 ,34 )
     font-size: 34px
     border-bottom: 3px solid $company-color
-  span
-    font-weight: lighter
+    span
+      font-weight: lighter
   p
-    padding: 30px 0 30px 0
+    padding: 30px 0 15px 0
     font-size: 18px
     color: rgb(108, 108, 108)
+  li
+    margin-top: 15px
+    background: url("img/about/marker.png") 0 no-repeat
+    padding-left: 25px
+    font-size: 16px
+    font-style: italic
+    color: rgb(90,90,90)
+    span
+      font-weight: 600
+      font-size: 18px
+      font-style: normal
+
+.title
+  margin-top: 100px
+  text-align: center
+  font-size: 44px
+  font-weight: 600
+
+.line
+  margin: 30px auto 0 auto
+  width: 100px
+  height: 5px
+  background: $company-color
+
+.main__team
+  background: #000
+  .team__title
+    color: #fff
+
+.team__row
+  width: 81%
+  margin: 85px auto 165px auto
+  display: flex
+  color: #fff
+  flex-wrap: wrap
+.team__column
+  width: 250px
+  padding: 20px 10px 0 10px
+  text-align: center
+  .photo
+    margin: 0 auto 20px auto
+    width: 130px
+    height: 130px
+    background: url("img/team/photo.png") 0 no-repeat
+  .name
+    font-size: 20px
+    font-weight: bold
+  .position
+    font-size: 16px
+    margin-bottom: 35px
+  .about__position
+    font-size: 14px
