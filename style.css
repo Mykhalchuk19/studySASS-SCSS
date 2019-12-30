@@ -16,6 +16,7 @@ header {
   display: flex;
   width: 100%;
   background-color: #000;
+  height: 93px;
 }
 
 .header__logo {
@@ -28,7 +29,7 @@ header {
   cursor: pointer;
 }
 
-nav {
+.header__menu {
   margin-top: 56px;
   margin-left: 29%;
 }
@@ -66,6 +67,36 @@ main {
 .main__welcome p {
   font-size: 20px;
   color: #d5d5d5;
+}
+
+.wrapper {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.main__about {
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+
+.about__right {
+  margin-left: 155px;
+}
+.about__right h3 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+  color: #222222;
+  font-size: 34px;
+  border-bottom: 3px solid #fcac45;
+}
+.about__right span {
+  font-weight: lighter;
+}
+.about__right p {
+  padding: 30px 0 30px 0;
+  font-size: 18px;
+  color: #6c6c6c;
 }
 
 /*# sourceMappingURL=style.css.map */

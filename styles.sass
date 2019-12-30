@@ -1,4 +1,5 @@
 $font-stack:  "Open Sans", sans-serif
+$company-color: rgb(252, 172, 69)
 
 *
   margin: 0
@@ -15,6 +16,7 @@ header
   display: flex
   width: 100%
   background-color: #000
+  height: 93px
 
 .header__logo
   text-transform: uppercase
@@ -25,7 +27,7 @@ header
   margin-left: 12%
   cursor: pointer
 
-nav
+.header__menu
   margin-top: 56px
   margin-left: 29%
 
@@ -37,7 +39,7 @@ nav
     font-weight: bold
 
   a:hover
-    border-bottom: 3px solid rgb(252, 172, 69)
+    border-bottom: 3px solid $company-color
 
 main
   display: flex
@@ -53,8 +55,32 @@ main
     color: rgb(153, 153, 153)
     font-weight: lighter
     .mycompany
-      color: rgb(252, 172, 69)
+      color: $company-color
       font-weight: bold
   p
     font-size: 20px
     color: rgb(213, 213, 213)
+
+.wrapper
+  width: 83%
+  margin: 0 auto
+
+.main__about
+  display: flex
+  padding: 100px 0 100px 0
+
+.about__right
+  margin-left: 155px
+  h3
+    display: inline-block
+    text-transform: uppercase
+    padding: 20px 0 20px 0
+    color: rgb(34,34 ,34 )
+    font-size: 34px
+    border-bottom: 3px solid $company-color
+  span
+    font-weight: lighter
+  p
+    padding: 30px 0 30px 0
+    font-size: 18px
+    color: rgb(108, 108, 108)
