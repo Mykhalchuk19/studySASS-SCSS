@@ -440,6 +440,9 @@ footer {
     margin: 0 auto;
     width: 100%;
   }
+  .main__about .about__right img, .main__about .about__left img {
+    width: 100%;
+  }
 
   .row {
     flex-direction: column;
