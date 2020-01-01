@@ -16,13 +16,13 @@ li
 a
   text-decoration: none
 
-header
+header // Може виглядати дивно, але краще працювати з хедером через клас, а не через тег
   height: 100px
-  display: flex
+  display: flex // По верстці було би краще дати йому justify-content: space-between і потім підправити відступи дочірнім, чим давати їм якісь дивні margin'и, при тому що елементи в хедері стрибають при зміні ширини сторінки
   width: 100%
   background-color: #000
 
-.header__logo
+.header__logo // Почитай за вкладеність селекторів, аби кожен раз не писати .header...
   text-transform: uppercase
   color: white
   font-size: 24px
@@ -58,7 +58,7 @@ main
   background: #000
   text-align: center
   padding: 210px 0 420px 0
-  h1
+  h1 // Використовуй всюди класи замість тегів. Приклад: сео захоче змінити теги, аби гугл краще шукав, і вся твоя верстка накриється мідним тазом
     font-size: 44px
     color: rgb(153, 153, 153)
     font-weight: lighter
@@ -69,7 +69,7 @@ main
     font-size: 20px
     color: rgb(213, 213, 213)
 
-.wrapper
+.wrapper // Блок за таким класом зазвичай має сталу/адаптивну ширину, і юзається всередині майже кожного огортаючого блоку(наприклад section), аби вирівняти контент посередині, а не просто раз на сторінці. Можу пояснити детальніше
   width: 83%
   margin: 0 auto
 
@@ -78,10 +78,10 @@ main
   padding: 100px 0 100px 0
   justify-content: center
 
-.about__right
+.about__right // left-right - не найкращі назви. А вдруг замовник скаже поміняти ці два блоки місцями? Називай відповідно до змісту, а не до вигляду.
   margin-left: 155px
   width: 40%
-  h3
+  h3 // За використання класів замість тегів я уже казав, більше не підмічаю.
     display: inline-block
     text-transform: uppercase
     padding: 20px 0 15px 0
@@ -106,7 +106,7 @@ main
       font-size: 18px
       font-style: normal
 
-.main__wrapper
+.main__wrapper // А, то у тебе є враппер. Так уже краще.
   width: 90%
   margin: 0 auto
 
@@ -135,6 +135,13 @@ main
   background: #000
   .team__title
     color: #fff
+
+//Візьми собі отакі правила створення відступів:
+  майже ніколи не давай відступ зверху при створенні сітки, віступи давай униз,
+    тоді у тебе буде менше проблем при стиці відступів (є така проблема як складання марджинів)
+  якщо у тебе початок якогось блоку і треба зробити першому елементу відступ зверху - дай батьківському padding-top, тоді якщо у тебе
+    елементи поміняють позиції, то залишиться старий відступ. Схожа історія із віступами знизу для останніх елементів
+  Така проблема часто помітна далі по коду, так що більше я її не підмічаю.
 
 .team__row
   margin: 85px 0 165px 0
@@ -320,7 +327,7 @@ footer
   .header__menu
     margin-left: 20%
 
-@media screen and (max-width:1125px)
+@media screen and (max-width: 1125px)
   .header__menu
     margin-left: 14%
   .form__inputs
@@ -329,7 +336,7 @@ footer
       width: 100%
       margin-bottom: 20px
 
-@media screen and (max-width:1035px)
+@media screen and (max-width: 1035px)
   header
     height: 180px
   .header__menu
