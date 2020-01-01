@@ -7,6 +7,9 @@ $company-color: rgb(252, 172, 69)
   font-family: $font-stack
   outline: none
 
+html, body
+  width: 100%
+
 li
   list-style: none
 
@@ -31,6 +34,9 @@ header
 .header__menu
   margin-top: 56px
   margin-left: 29%
+  label, input
+    color: #fff
+    display: none
 
 .header__links
   a
@@ -309,3 +315,60 @@ footer
   img
     margin-left: 12px
     cursor: pointer
+
+@media screen and (max-width: 1290px)
+  .header__menu
+    margin-left: 20%
+
+@media screen and (max-width:1125px)
+  .header__menu
+    margin-left: 14%
+  .form__inputs
+    flex-direction: column
+    input
+      width: 100%
+      margin-bottom: 20px
+
+@media screen and (max-width:1035px)
+  header
+    height: 180px
+  .header__menu
+    width: 100%
+    label
+      width: 40px
+      height: 40px
+      float: right
+      display: block
+    .header__links
+      display: none
+
+  #menu__checkbox:checked + .header__links
+    display: block
+    position: absolute
+    top: 100px
+    left: 43px
+    a
+      display: block
+      text-align: left
+  .main__about
+    flex-direction: column
+    .about__right, .about__left
+      margin: 0 auto
+      width: 100%
+
+  .row
+    flex-direction: column
+
+  .column
+    margin: 20px auto 10px auto
+
+  .clients__row
+    display: flex
+    flex-direction: column
+    img
+      margin: 20px auto 10px auto
+
+  .work__line__1,  .work__line__2,  .work__line__3
+    flex-direction: column
+    img
+      margin: 0 auto
