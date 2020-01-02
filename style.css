@@ -128,7 +128,7 @@ main {
 }
 
 .main__wrapper {
-  width: 90%;
+  width: 89%;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -246,6 +246,7 @@ main {
 }
 
 .clients__row {
+  width: 80%;
   margin: 100px auto 210px auto;
   text-align: center;
   justify-content: space-between;
