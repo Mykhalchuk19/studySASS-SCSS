@@ -13,14 +13,14 @@
     <nav class="header__menu"> <!-- nav > ul > li > a. Така має бути ієрархія у навігації. До речі - можеш за emmet почитати, полегшить життя -->
         <label for="menu__checkbox">&#9776;</label>
         <input type="checkbox" id="menu__checkbox"/>
-        <div class="header__links">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">PORTFOLIO</a>
-            <a href="#">TESTIMONIALS</a>
-            <a href="#">CONTACT</a>
-        </div>
+        <ul class="header__links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
     </nav>
 </header>
 <main>
@@ -53,135 +53,132 @@
     <section class="main__team">
         <div class="main__wrapper">
             <h2 class="team__title title">OUR TEAM</h2> <!-- У тебе цей блок вилізає за батьківський, цьо є погано -->
-            <div class="line"></div> <!-- Аби не робити такі блоки юзають псевдоклас after -->
-            <div class="team__row row"> <!-- Це має бути списком -->
-                <div class="team__column column">
+            <ul class="team__row row"> <!-- Це має бути списком -->
+                <li class="team__column column">
                     <div class="photo"></div>
                     <h4 class="name">Vlad Ivanov</h4>
                     <p class="position">Designer</p>
                     <p class="about__position">
                         Do not seek to change what has come before. Seek to create that which has not.
                     </p>
-                </div>
-                <div class="team__column column">
+                </li>
+                <li class="team__column column">
                     <div class="photo"></div>
                     <h4 class="name">Bogdan Makarov</h4>
                     <p class="position">Manager</p>
                     <p class="about__position">
                         Do not seek to change what has come before. Seek to create that which has not.
                     </p>
-                </div>
-                <div class="team__column column">
+                </li>
+                <li class="team__column column">
                     <div class="photo"></div>
                     <h4 class="name">Pavel Konov</h4>
                     <p class="position">Copywriter</p>
                     <p class="about__position">
                         Do not seek to change what has come before. Seek to create that which has not.
                     </p>
-                </div>
-                <div class="team__column column">
+                </li>
+                <li class="team__column column">
                     <div class="photo"></div>
                     <h4 class="name">Max Belov</h4>
                     <p class="position">SEO</p>
                     <p class="about__position">
                         Do not seek to change what has come before. Seek to create that which has not.
                     </p>
-                </div>
-            </div>
+                </li>
+            </li>
         </div>
     </section>
     <section class="main__services">
         <div class="main__wrapper">
             <h2 class="services__title title">OUR SERVICES</h2>
-            <div class="line"></div>
             <p class="services__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
                 maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi
                 porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores
                 ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro
                 ipsa tenetur.</p>
-            <div class="services__row row">
-                <div class="services__column column">
+            <ul class="services__row row">
+                <li class="services__column column">
                     <div class="image">
                         <img src="img/services/webdesign.png" alt="web design">
                     </div>
                     <h4>WEB DESIGN</h4>
                     <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
                         1.10.32.</p>
-                </div>
-                <div class="services__column column">
+                    </li>
+                <li class="services__column column">
                     <div class="image">
                         <img src="img/services/mobile.png" alt="mobile">
                     </div>
                     <h4>MOBILE APPS</h4>
                     <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
                         1.10.32.</p>
-                </div>
-                <div class="services__column column">
+                    </li>
+                <li class="services__column column">
                     <div class="image">
                         <img src="img/services/photography.png" alt="photo">
                     </div>
                     <h4>PHOTOGRAPHY</h4>
                     <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
                         1.10.32.</p>
-                </div>
-                <div class="services__column column">
+                    </li>
+                <li class="services__column column">
                     <div class="image">
                         <img src="img/services/marketing.png" alt="marketing">
                     </div>
                     <h4>MARKETING</h4>
                     <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
                         1.10.32.</p>
-                </div>
-            </div>
+                    </li>
+                </ul>
         </div>
     </section>
     <section class="main__clients">
         <div class="main__wrapper">
             <h2 class="clients__title title"><span>SOME OF</span> OUR CLIENTS</h2>
-            <div class="line"></div>
-            <div class="clients__row"> <!-- Це має бути списком -->
-                <img src="img/clients/chanel.png" alt="chanel">
-                <img src="img/clients/zara.png" alt="zara">
-                <img src="img/clients/guerlian.png" alt="guerlain">
-                <img src="img/clients/lancome.png" alt="lancome">
-                <img src="img/clients/lacoste.png" alt="lacoste">
-            </div>
+            <ul class="clients__row row"> <!-- Це має бути списком -->
+                <li><img src="img/clients/chanel.png" alt="chanel"></li>
+                <li><img src="img/clients/zara.png" alt="zara"></li>
+                <li><img src="img/clients/guerlian.png" alt="guerlain"></li>
+                <li><img src="img/clients/lancome.png" alt="lancome"></li>
+                <li><img src="img/clients/lacoste.png" alt="lacoste"></li>
+            </ul>
         </div>
     </section>
     <section class="main__work">
         <div class="main__wrapper">
             <h2 class="title"><span>TAKE A LOOK AT</span> OUR WORK</h2>
-            <div class="line"></div>
             <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores
                 ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro
                 ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam
                 quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa
                 tenetur.</p>
-            <div class="work__line__1">
+                <div class="lines">
+            <div class="work__line">
                 <!-- Дуже фігова назва для класа, у тебе може бути рядків з 20, що тоді? Всі рядки мають схожі стилі, якщо тобі треба перший/останній - юзай first-child/last-child. І чому ці рядки не мають спільної обгортки? Тут би ще гріди добре зайшли -->
                 <img src="img/work/line1_photo.png" alt="line1_photo">
                 <img src="img/work/line1_photo.png" alt="line1_photo">
                 <img src="img/work/line1_photo.png" alt="line1_photo">
                 <img src="img/work/line1_photo.png" alt="line1_photo">
             </div>
-            <div class="work__line__2">
+            <div class="work__line">
                 <img src="img/work/line2_photo.png" alt="line2_photo">
                 <img src="img/work/line2_photo.png" alt="line2_photo">
                 <img src="img/work/line2_photo.png" alt="line2_photo">
                 <img src="img/work/line2_photo.png" alt="line2_photo">
             </div>
-            <div class="work__line__3">
+            <div class="work__line">
                 <img src="img/work/line3_photo.png" alt="line3_photo">
                 <img src="img/work/line3_photo.png" alt="line3_photo">
                 <img src="img/work/line3_photo.png" alt="line3_photo">
                 <img src="img/work/line3_photo.png" alt="line3_photo">
             </div>
         </div>
+    </div>
     </section>
     <section class="main__testimonials">
         <div class="main__wrapper">
             <h2 class="title">OUR CLIENTS’ <span>TESTIMONIALS</span></h2>
-            <div class="line"></div>
             <p class="testimonials__text">This book is a treatise on the theory of ethics, very popular during the
                 Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
                 1.10.32.</p>
@@ -197,12 +194,12 @@
                 porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             <form action="#" name="contact" method="POST">
                 <div class="form__inputs">
-                    <p>Name <span class="star">*</span><input type="text"></p>
+                    <p>Name <label for="name">*</label><input type="text" id="name"></p>
                     <!-- Замість цих дивних спанів має бути label, це стосується інпутів і textarea -->
-                    <p>Email address <span class="star">*</span><input type="text"></p>
+                    <p>Email address <label for="email">*</label><input type="text" id="email"></p>
                 </div>
-                <p>Message <span class="star">*</span></p>
-                <textarea name="text"></textarea>
+                <p>Message <label for="message">*</label></p>
+                <textarea name="text" id="message"></textarea>
                 <div class="button__block">
                     <input type="submit" value="SEND">
                 </div>
@@ -211,13 +208,13 @@
     </section>
 </main>
 <footer>
-    <div class="footer__social"> <!-- Це має бути списком -->
-        <img src="img/social/facebook.png" alt="facebook">
-        <img src="img/social/twitter.png" alt="twitter">
-        <img src="img/social/google.png" alt="google">
-        <img src="img/social/linkedin.png" alt="linkedin">
-        <img src="img/social/dribbble.png" alt="dribble">
-    </div>
+    <ul class="footer__social"> <!-- Це має бути списком -->
+        <li><img src="img/social/facebook.png" alt="facebook"></li>
+    <li><img src="img/social/twitter.png" alt="twitter"></li>
+<li><img src="img/social/google.png" alt="google"></li>
+<li><img src="img/social/linkedin.png" alt="linkedin"></li>
+<li> <img src="img/social/dribbble.png" alt="dribble"></li>
+    </ul>
 </footer>
 </body>
 </html>
