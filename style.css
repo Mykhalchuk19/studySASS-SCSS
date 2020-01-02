@@ -37,6 +37,7 @@ header {
 
 .header__menu {
   margin-top: 56px;
+  margin-right: 9%;
 }
 .header__menu label, .header__menu input {
   color: #fff;
@@ -398,10 +399,6 @@ footer {
 }
 
 @media screen and (max-width: 1125px) {
-  .header__menu {
-    margin-left: 14%;
-  }
-
   .form__inputs {
     flex-direction: column;
   }
